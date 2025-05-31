@@ -1,9 +1,7 @@
 # LyricsFloat Desktop v1.0.0 🎶
 **Real-time lyrics overlay for Spotify**
 
-### This Repo is only for [Releases Page](https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases),
-
-Contact me at sonisumit7904@gmail.com
+### This repository contains only releases for LyricsFloat. Please visit the [releases page](https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases), to download the latest version. 
 
 ![LyricsFloat Demo](icons/preview.png)
 ![LyricsFloat Demo](icons/overlay.png)
