@@ -1,13 +1,13 @@
-# LyriFloat - Lyrics Overlay for Spotify
+# LyricsFloat - Lyrics Overlay for Spotify
 
 ### This Repo is only for releases,
 
 Contact me at sonisumit7904@gmail.com
 
-LyriFloat is a desktop application that displays real-time synchronized lyrics for the music you're playing on Spotify. Keep the lyrics overlay visible while you work or play, with full customization options to match your style.
+LyricsFloat is a desktop application that displays real-time synchronized lyrics for the music you're playing on Spotify. Keep the lyrics overlay visible while you work or play, with full customization options to match your style.
 
-![LyriFloat Demo](icons/preview.png)
-![LyriFloat Demo](icons/overlay.png)
+![LyricsFloat Demo](icons/preview.png)
+![LyricsFloat Demo](icons/overlay.png)
 
 ## Features
 
@@ -41,16 +41,16 @@ LyriFloat is a desktop application that displays real-time synchronized lyrics f
 
 ### Installation
 
-1. Download the latest release from the [releases page](https://github.com/sonisumit7904/LyriFloat_Desktop_Releases/releases).
+1. Download the latest release from the [releases page](https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases).
 2. Extract the ZIP file to your preferred location.
-3. Run the `LyriFloat.exe` file to start the application.
+3. Run the `LyricsFloat.exe` file to start the application.
 
 ### Connecting to Spotify
 
-1. Launch LyriFloat
+1. Launch LyricsFloat
 2. Click on the "Connect to Spotify" button in the settings window
 3. A browser window will open asking you to log in to your Spotify account
-4. Grant permission for LyriFloat to access your playing data
+4. Grant permission for LyricsFloat to access your playing data
 5. You'll be redirected back to the application automatically
 
 ### Opening the Lyrics Overlay
@@ -109,16 +109,16 @@ You can select your preferred lyrics source:
 
 ### Privacy Notice
 
-LyriFloat only requests access to your currently playing track information. We do not:
+LyricsFloat only requests access to your currently playing track information. We do not:
 - Store your listening history
 - Access your personal Spotify data
 - Require your Spotify password (authentication is handled securely through Spotify)
 
 ## Feedback and Support
 
-We're constantly working to improve LyriFloat! If you have suggestions, encounter bugs, or need assistance:
-- Submit an issue on our [GitHub page](https://github.com/sonisumit7904/LyriFloat_Desktop_Releases/issues)
+We're constantly working to improve LyricsFloat! If you have suggestions, encounter bugs, or need assistance:
+- Submit an issue on our [GitHub page](https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/issues)
 
 ---
 
-LyriFloat is not affiliated with Spotify. Spotify is a trademark of Spotify AB.
+LyricsFloat is not affiliated with Spotify. Spotify is a trademark of Spotify AB.
