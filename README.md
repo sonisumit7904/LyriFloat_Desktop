@@ -3,13 +3,13 @@
 
 ### This repository contains only releases for LyricsFloat. Please visit the [releases page](https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/tag/v1.0.0), to download the latest version.
 
-![LyricsFloat Demo](icons/preview.png)
-![LyricsFloat Demo](icons/overlay.png)
+![LyricsFloat Demo](public/icons/preview.png)
+![LyricsFloat Demo](public/icons/overlay.png)
 
 ---
 
 ### How to Use
-1. **Download**: Get the installer: **LyricsFloat_Desktop.Setup.1.0.0.exe** from the [Releases Page](https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/tag/v1.0.0).
+1. **Download**: Get the installer: **LyricsFloat_Desktop.Setup.1.0.0.exe** from the [Releases Page](https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/download/v1.0.0/LyricsFloat_Desktop.Setup.1.0.0.exe).
 2. **Install**: Run the installer, click **Next** through the steps, and finish.
 3. **Launch**: Open the app, go to **Settings**, and click **Connect to Spotify**.
 4. **Authorize**: Log in to Spotify in the browser and grant permissions.

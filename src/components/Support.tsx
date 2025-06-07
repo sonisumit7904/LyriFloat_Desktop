@@ -8,7 +8,7 @@ const Support = () => {
   const faqs = [
     {
       question: "When will LyricsFloat Desktop be available?",
-      answer: "LyricsFloat Desktop is currently in final development and testing. We're working hard to ensure a stable, polished experience before launch. Follow us on Twitter or star our GitHub repository to be notified when it's ready for download."
+      answer: "LyricsFloat Desktop v1.0.0 is now available! You can download it from the [releases page](https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/download/v1.0.0/LyricsFloat_Desktop.Setup.1.0.0.exe). Follow us on [Twitter](https://x.com/sonisumit7904) or star our [GitHub repository](https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases) to be notified about future updates."
     },
     {
       question: "How will LyricsFloat work with Spotify?",
@@ -58,12 +58,12 @@ const Support = () => {
       icon: <Github className="h-6 w-6" />,
       title: "Follow Development",
       description: "Watch our progress and star the repository for updates",
-      link: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases", // Updated GitHub link
+      link: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases",
       action: "Star on GitHub"
     },
     {
       icon: <MessageCircle className="h-6 w-6" />,
-      title: "Development Updates", 
+      title: "Follow for Updates", // Updated title
       description: "Follow our journey and get notified about milestones",
       link: "https://x.com/sonisumit7904", // Updated Twitter link
       action: "Follow on Twitter"
@@ -72,7 +72,7 @@ const Support = () => {
       icon: <Mail className="h-6 w-6" />,
       title: "General Inquiries",
       description: "For questions about the project or collaboration",
-      link: "mailto:hello@lyricsFloat.com",
+      link: "mailto:sonisumit7904@gmail.com", // Updated email
       action: "Send Email"
     }
   ];
@@ -183,9 +183,6 @@ const Support = () => {
                 </a>
                 <a href="#features" className="block text-green-400 hover:text-green-300 transition-colors">
                   → Planned Features
-                </a>
-                <a href="#how-it-works" className="block text-green-400 hover:text-green-300 transition-colors">
-                  → How It Will Work
                 </a>
                 <a href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" target="_blank" rel="noopener noreferrer" className="block text-green-400 hover:text-green-300 transition-colors">
                   → View Source Code

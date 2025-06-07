@@ -28,11 +28,11 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="#download"
+                href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/download/v1.0.0/LyricsFloat_Desktop.Setup.1.0.0.exe" // Updated download link
                 className="bg-green-400 hover:bg-green-500 text-black px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center space-x-3 shadow-lg hover:shadow-green-400/25"
               >
                 <Download className="h-5 w-5" />
-                <span>Download & Connect to Spotify</span>
+                <span>Get Started Now</span> {/* Updated text */}
               </a>
               
               <a
@@ -40,14 +40,14 @@ const Hero = () => {
                 className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all transform hover:scale-105 flex items-center justify-center space-x-3 border border-gray-700"
               >
                 <Play className="h-5 w-5" />
-                <span>See It In Action</span>
+                <span>Watch Demo</span>
               </a>
             </div>
             
             <div className="mt-8 flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-400">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span>Works with any Spotify song</span>
+                <span>Download & Connect to Spotify</span> {/* Updated text */}
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />

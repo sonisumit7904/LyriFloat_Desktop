@@ -10,26 +10,25 @@ const Footer = () => {
       links: [
         { name: "About", href: "#home" },
         { name: "Features", href: "#features" },
-        { name: "How It Works", href: "#how-it-works" },
         { name: "Development", href: "#support" }
       ]
     },
     {
       title: "Development", 
       links: [
-        { name: "GitHub Repository", href: "https://github.com/[username]/LyricsFloat-Desktop" },
-        { name: "Follow Progress", href: "https://twitter.com/LyricsFloat" },
-        { name: "Contact Developer", href: "mailto:hello@lyricsFloat.com" },
-        { name: "Feature Requests", href: "https://github.com/[username]/LyricsFloat-Desktop/issues" }
+        { name: "GitHub Repository", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" },
+        { name: "Follow Progress", href: "https://x.com/sonisumit7904" },
+        { name: "Contact Developer", href: "mailto:sonisumit7904@gmail.com" },
+        { name: "Feature Requests", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/issues" }
       ]
     },
     {
       title: "Community",
       links: [
-        { name: "Twitter Updates", href: "https://twitter.com/LyricsFloat" },
-        { name: "GitHub Stars", href: "https://github.com/[username]/LyricsFloat-Desktop" },
-        { name: "Support Development", href: "https://buymeacoffee.com/lyricsFloat" },
-        { name: "Share Project", href: "https://twitter.com/intent/tweet?text=Excited%20about%20LyricsFloat%20Desktop%20-%20real-time%20synced%20lyrics%20for%20Spotify!%20🎵&url=https://lyricsFloat.com" }
+        { name: "Twitter Updates", href: "https://x.com/sonisumit7904" },
+        { name: "GitHub Stars", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" },
+        { name: "Support Development", href: "https://bento.me/sumit-soni" },
+        { name: "Share Project", href: "https://lyricsfloat.vercel.app/" }
       ]
     }
   ];
@@ -38,19 +37,19 @@ const Footer = () => {
     {
       name: "Twitter",
       icon: <Twitter className="h-5 w-5" />,
-      href: "https://twitter.com/LyricsFloat",
+      href: "https://x.com/sonisumit7904",
       color: "hover:text-blue-400"
     },
     {
       name: "GitHub", 
       icon: <Github className="h-5 w-5" />,
-      href: "https://github.com/[username]/LyricsFloat-Desktop",
+      href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases",
       color: "hover:text-gray-300"
     },
     {
       name: "Email",
       icon: <Mail className="h-5 w-5" />,
-      href: "mailto:hello@lyricsFloat.com",
+      href: "mailto:sonisumit7904@gmail.com",
       color: "hover:text-green-400"
     }
   ];

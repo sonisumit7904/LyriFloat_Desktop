@@ -98,7 +98,7 @@ const SocialProof = () => {
                 rel="noopener noreferrer"
                 className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center space-x-2"
               >
-                <span>Follow Development Updates</span>
+                <span>Follow for Updates</span>
               </a>
               <a
                 href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases"

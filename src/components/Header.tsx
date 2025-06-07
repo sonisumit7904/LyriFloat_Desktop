@@ -39,22 +39,13 @@ const Header = () => {
             <a href="#support" className="text-gray-300 hover:text-white transition-colors">Support</a>
           </nav>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://twitter.com/yourhandle"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
+              href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/download/v1.0.0/LyricsFloat_Desktop.Setup.1.0.0.exe" // Updated download link
+              className="bg-green-400 hover:bg-green-500 text-black px-5 py-2 rounded-lg font-semibold transition-all transform hover:scale-105 text-sm"
             >
-              Motivate Me
-            </a>
-            <a
-              href="#download"
-              className="bg-green-400 hover:bg-green-500 text-black px-4 py-2 rounded-lg font-semibold transition-all transform hover:scale-105 flex items-center space-x-2"
-            >
-              <Download className="h-4 w-4" />
-              <span>Download Now</span>
+              Download Now
             </a>
           </div>
 
@@ -78,11 +69,10 @@ const Header = () => {
             <a href="#support" className="block text-gray-300 hover:text-white transition-colors">Support</a>
             <div className="pt-4 border-t border-gray-800">
               <a
-                href="#download"
-                className="bg-green-400 hover:bg-green-500 text-black px-4 py-2 rounded-lg font-semibold transition-all flex items-center justify-center space-x-2"
+                href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/download/v1.0.0/LyricsFloat_Desktop.Setup.1.0.0.exe" // Updated download link
+                className="w-full bg-green-400 hover:bg-green-500 text-black px-5 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 text-sm flex items-center justify-center"
               >
-                <Download className="h-4 w-4" />
-                <span>Download Now</span>
+                Download Now
               </a>
             </div>
           </div>

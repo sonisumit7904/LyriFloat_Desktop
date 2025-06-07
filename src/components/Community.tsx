@@ -7,17 +7,17 @@ const Community = () => {
       icon: <Twitter className="h-6 w-6" />,
       title: "Motivate the Developer",
       description: "Follow us on Twitter for updates and behind-the-scenes content",
-      action: "Follow @sonisumit7904", // Updated Twitter handle
-      link: "https://x.com/sonisumit7904", // Updated Twitter link
+      action: "Follow @sonisumit7904",
+      link: "https://x.com/sonisumit7904", 
       color: "from-blue-400 to-blue-500",
       hoverColor: "hover:from-blue-500 hover:to-blue-600"
     },
     {
       icon: <Coffee className="h-6 w-6" />,
-      title: "Buy Me a Coffee",
+      title: "Support the Developer", 
       description: "Support development with a small donation",
-      action: "Donate $5",
-      link: "https://buymeacoffee.com/lyricsFloat",
+      action: "Donate", 
+      link: "https://bento.me/sumit-soni", // Updated Bento link
       color: "from-yellow-400 to-orange-400",
       hoverColor: "hover:from-yellow-500 hover:to-orange-500"
     },
@@ -26,7 +26,7 @@ const Community = () => {
       title: "Star on GitHub",
       description: "Show your support by starring our repository",
       action: "⭐ Star Repository",
-      link: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases", // Updated GitHub link
+      link: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases", 
       color: "from-gray-400 to-gray-500",
       hoverColor: "hover:from-gray-500 hover:to-gray-600"
     },
@@ -35,7 +35,7 @@ const Community = () => {
       title: "Share with Friends",
       description: "Help others discover the joy of synchronized lyrics",
       action: "Share LyricsFloat",
-      link: "https://twitter.com/intent/tweet?text=Just%20discovered%20LyricsFloat%20Desktop%20-%20real-time%20synced%20lyrics%20for%20every%20Spotify%20song!%20🎵&url=https://lyricsFloat.com",
+      link: "https://twitter.com/intent/tweet?text=Just%20discovered%20LyricsFloat%20Desktop%20-%20real-time%20synced%20lyrics%20for%20every%20Spotify%20song!%20🎵&url=https://lyricsfloat.vercel.app/", 
       color: "from-green-400 to-emerald-400",
       hoverColor: "hover:from-green-500 hover:to-emerald-500"
     }
@@ -88,9 +88,9 @@ const Community = () => {
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="flex-shrink-0">
               <img 
-                src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                src="/icons/profile.png"
                 alt="Developer"
-                className="w-24 h-24 rounded-full object-cover border-4 border-green-400"
+                className="w-24 h-24 rounded-full object-cover"
               />
             </div>
             <div className="flex-1 text-center lg:text-left">
@@ -105,7 +105,7 @@ const Community = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <a
-                  href="https://twitter.com/LyricsFloat"
+                  href="https://x.com/sonisumit7904"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center space-x-2"
@@ -114,7 +114,7 @@ const Community = () => {
                   <span>Follow for Updates</span>
                 </a>
                 <a
-                  href="https://buymeacoffee.com/lyricsFloat"
+                  href="https://bento.me/sumit-soni"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center space-x-2"

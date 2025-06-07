@@ -8,7 +8,7 @@ const Features = () => {
       title: "Real-Time Sync",
       subtitle: "Perfect timing, every time",
       description: "it depends on our server, but almost all are correct.",
-      highlight: "99.9% accuracy"
+      highlight: "High accuracy"
     },
     {
       icon: <Monitor className="h-8 w-8" />,
@@ -113,7 +113,7 @@ const Features = () => {
               Join thousands of users who are already singing along to every song
             </p>
             <a
-              href="#download"
+              href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/download/v1.0.0/LyricsFloat_Desktop.Setup.1.0.0.exe" // Updated download link
               className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 inline-block"
             >
               Download LyricsFloat Now
