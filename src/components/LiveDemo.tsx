@@ -144,18 +144,16 @@ const LiveDemo = () => {
                     <div className="bg-white h-1 rounded-full w-3/4" />
                   </div>
                 </div>
-              </div>
-
-              {/* Floating Lyrics Overlay - This is the key feature */}
-              <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                bg-black/95 backdrop-blur-md rounded-2xl p-8 border-2 border-green-400/50 shadow-2xl
-                transition-all duration-500 ${isPlaying ? 'scale-100 opacity-100' : 'scale-95 opacity-80'}`}>
+              </div>              {/* Floating Lyrics Overlay - Positioned to not block controls */}
+              <div className={`absolute top-6 right-6 
+                bg-black/95 backdrop-blur-md rounded-2xl p-6 border-2 border-green-400/50 shadow-2xl
+                transition-all duration-500 max-w-sm z-10 ${isPlaying ? 'scale-100 opacity-100' : 'scale-95 opacity-80'}`}>
                 <div className="text-center">
                   <div className="text-green-400 text-sm font-semibold mb-2 flex items-center justify-center space-x-2">
                     <Music className="h-4 w-4" />
                     <span>LyricsFloat Active</span>
                   </div>
-                  <div className="text-white text-2xl font-bold mb-2 min-h-[60px] flex items-center justify-center">
+                  <div className="text-white text-xl font-bold mb-2 min-h-[50px] flex items-center justify-center text-center">
                     {currentSongData.lyrics[currentLyric]}
                   </div>
                   <div className="text-gray-400 text-sm">
