@@ -51,12 +51,11 @@ const Features = () => {
       subtitle: "Your data stays yours",
       description: "Only accesses current song info. No personal data tracking.",
       highlight: "Zero tracking"
-    },
-    {
+    },    {
       icon: <Cpu className="h-8 w-8" />,
       title: "Lightweight",
       subtitle: "Minimal resource usage",
-      description: "Minimal resource usage, typically under 100MB RAM.",
+      description: "Efficient performance with minimal resource usage, typically under 100MB RAM.",
       highlight: "<100MB RAM"
     }
   ];

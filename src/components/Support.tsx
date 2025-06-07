@@ -37,10 +37,9 @@ const Support = () => {
     {
       question: "How will my Spotify data be protected?",
       answer: "LyricsFloat will only access your currently playing track information and nothing else. We won't store any personal data, music history, or account information. All connections will use secure OAuth authentication."
-    },
-    {
+    },    {
       question: "What are the system requirements?",
-      answer: "LyricsFloat Desktop will require Windows 10 or later, at least 4GB of RAM (8GB recommended), and an internet connection for Spotify connectivity and lyrics fetching. The app itself will be very lightweight at around 50MB."
+      answer: "LyricsFloat Desktop requires Windows 10 or later, at least 4GB of RAM (8GB recommended), and an internet connection for Spotify connectivity and lyrics fetching. The installer is approximately 83MB and requires around 250MB of storage after installation."
     },
     {
       question: "How can I provide feedback or report issues?",

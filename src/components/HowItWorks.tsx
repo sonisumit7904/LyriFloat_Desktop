@@ -1,16 +1,15 @@
 import React from 'react';
 import { Download, LogIn, Play, Mic, CheckCircle } from 'lucide-react';
 
-const HowItWorks = () => {
-  const steps = [
+const HowItWorks = () => {  const steps = [
     {
       number: "01",
       icon: <Download className="h-8 w-8" />,
       title: "Download LyricsFloat",
-      subtitle: "One-click installer (15MB)",
+      subtitle: "One-click installer (83MB)",
       description: "Get the app from our secure servers. Windows 10+ compatible.",
-      imageAlt: "Illustration of downloading a file",
-      details: ["One-click installer", "Windows 10+ compatible", "Approx. 15MB download size"]
+      image: "/icons/step1.png",
+      details: ["One-click installer", "Windows 10+ compatible", "83MB download size"]
     },
     {
       number: "02", 
@@ -18,7 +17,7 @@ const HowItWorks = () => {
       title: "Connect to Spotify",
       subtitle: "Secure OAuth login",
       description: "Link your Spotify account securely. LyricsFloat only needs to see what's currently playing.",
-      imageAlt: "Illustration of connecting to a service",
+      image: "/icons/step2.png",
       details: ["Secure OAuth login", "Read-only access to current song", "Your privacy is protected"]
     },
     {
@@ -27,7 +26,7 @@ const HowItWorks = () => {
       title: "Play Your Music",
       subtitle: "Start any song on Spotify",
       description: "Play music on Spotify as you normally would. LyricsFloat automatically detects and syncs.",
-      imageAlt: "Illustration of playing music",
+      image: "/icons/step3.png",
       details: ["Automatic song detection", "Works with any Spotify-connected device", "Real-time lyric synchronization"]
     },
     {
@@ -36,7 +35,7 @@ const HowItWorks = () => {
       title: "Enjoy Sing-Along",
       subtitle: "Synced lyrics appear instantly",
       description: "Watch perfectly timed lyrics appear. The overlay stays on top while you work or play.",
-      imageAlt: "Illustration of singing with lyrics",
+      image: "/icons/step4.png",
       details: ["Millisecond-perfect timing", "Always-on-top overlay", "Distraction-free design"]
     }
   ];
@@ -95,11 +94,12 @@ const HowItWorks = () => {
 
               {/* Visual */}
               <div className="flex-1">
-                <div className="relative">
-                  <div className="bg-gray-800 rounded-2xl p-6 border border-gray-700 shadow-2xl">
-                    <div className="w-full h-64 bg-gray-700 rounded-lg mb-4 flex items-center justify-center">
-                       <span className="text-gray-500 text-sm">{step.imageAlt}</span>
-                    </div>
+                <div className="relative">                  <div className="bg-gray-800 rounded-2xl p-6 border border-gray-700 shadow-2xl">
+                    <img 
+                      src={step.image}
+                      alt={`Step ${step.number}: ${step.title}`}
+                      className="w-full h-64 object-cover rounded-lg mb-4"
+                    />
                     <div className="bg-black/50 rounded-lg p-4">
                       <div className="flex items-center space-x-3 mb-2">
                         <div className="text-green-400">

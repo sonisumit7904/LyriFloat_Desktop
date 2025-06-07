@@ -4,30 +4,22 @@ import { Music, Heart, Github, Twitter, Mail } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const footerLinks = [
-    {
+  const footerLinks = [    {
       title: "Navigate",
       links: [
         { name: "Home", href: "#home" },
         { name: "Features", href: "#features" },
-        { name: "See in Action", href: "#demo" }, // Assuming a demo section with id "demo"
-        { name: "Download", href: "#download" }  // Assuming a download hub with id "download"
+        { name: "See in Action", href: "#demo" },
+        { name: "Download", href: "#download" }
       ]
     },
     {
-      title: "Key Links",
+      title: "Support & Development",
       links: [
-        { name: "GitHub Project", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" },
-        { name: "Feature Requests / Issues", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/issues" },
-        { name: "Contact Us", href: "mailto:sonisumit7904@gmail.com" }
-      ]
-    },
-    {
-      title: "Community & Support",
-      links: [
-        { name: "Twitter / Updates", href: "https://x.com/sonisumit7904" },
-        { name: "Support Development", href: "https://bento.me/sumit-soni" },
-        { name: "Share LyricsFloat", href: "https://lyricsfloat.vercel.app/" } // Link to the main page for sharing
+        { name: "GitHub Repository", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" },
+        { name: "Report Issues", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/issues" },
+        { name: "Contact Developer", href: "mailto:sonisumit7904@gmail.com" },
+        { name: "Support Development", href: "https://bento.me/sumit-soni" }
       ]
     }
   ];
@@ -70,10 +62,9 @@ const Footer = () => {
                 <span className="text-xs bg-green-400 text-black px-2 py-1 rounded-full font-semibold">
                   Desktop
                 </span>
-              </div>
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                Real-time synced lyrics for every Spotify song. Currently in development 
-                with launch coming soon.
+              </div>              <p className="text-gray-300 mb-6 leading-relaxed">
+                Real-time synced lyrics for every Spotify song. v1.0.0 is now available 
+                with ongoing development and community-driven improvements.
               </p>
               
               {/* Social Links */}

@@ -16,11 +16,11 @@ const DownloadSection = () => {
       }, 3000);
     }
   };
-
   const systemRequirements = [
     { label: "Operating System", value: "Windows 10 or later" },
     { label: "RAM", value: "4GB minimum (8GB recommended)" },
-    { label: "Storage", value: "50MB available space" },
+    { label: "Download Size", value: "~83MB installer" },
+    { label: "Storage", value: "~250MB after installation" },
     { label: "Internet", value: "Required for Spotify connection" },
     { label: "Spotify", value: "Premium or Free account" }
   ];
