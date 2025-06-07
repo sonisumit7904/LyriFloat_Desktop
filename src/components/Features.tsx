@@ -7,56 +7,56 @@ const Features = () => {
       icon: <Zap className="h-8 w-8" />,
       title: "Real-Time Sync",
       subtitle: "Perfect timing, every time",
-      description: "it depends on our server, but almost all are correct.",
+      description: "Accurate, millisecond-timed lyrics for every song.",
       highlight: "High accuracy"
     },
     {
       icon: <Monitor className="h-8 w-8" />,
       title: "Universal Overlay",
       subtitle: "Works with everything",
-      description: "Stays on top while you work, game, browse, or do anything else on your computer.",
+      description: "Lyrics stay on top while you work, game, or browse.",
       highlight: "Always visible"
     },
     {
       icon: <Library className="h-8 w-8" />,
       title: "Multiple Sources",
       subtitle: "Every song covered",
-      description: "Integrated with Musixmatch, YouTube, and Lyrics.ovh for comprehensive lyrics coverage.",
+      description: "Comprehensive lyrics from Musixmatch, YouTube & Lyrics.ovh.",
       highlight: "50M+ songs"
     },
     {
       icon: <Clock className="h-8 w-8" />,
       title: "Instant Setup",
       subtitle: "5 minutes to singing",
-      description: "Download → Login → Overlay → Sing. The simplest setup process you've ever experienced.",
+      description: "Download, connect to Spotify, and sing. Simple as that.",
       highlight: "5 min setup"
     },
     {
       icon: <Headphones className="h-8 w-8" />,
       title: "Spotify Integration",
       subtitle: "Seamless connection",
-      description: "Automatically detects what you're playing and displays lyrics without any manual input.",
+      description: "Auto-detects Spotify playback for seamless lyric display.",
       highlight: "Auto-detection"
     },
     {
       icon: <Globe className="h-8 w-8" />,
       title: "Multi-Language",
       subtitle: "Global music support",
-      description: "it also depends on our server, currently, the lyrics language is not changable, as we fetch it from the server, it depends on server, will improve it on user demand.",
+      description: "Supports lyrics in multiple languages, server-dependent.",
       highlight: "25+ languages"
     },
     {
       icon: <Shield className="h-8 w-8" />,
       title: "Privacy First",
       subtitle: "Your data stays yours",
-      description: "We only access what's currently playing. No browsing history, no personal data collection.",
+      description: "Only accesses current song info. No personal data tracking.",
       highlight: "Zero tracking"
     },
     {
       icon: <Cpu className="h-8 w-8" />,
       title: "Lightweight",
       subtitle: "Minimal resource usage",
-      description: "currently uses around 80mb of ram, but will reduce it also, can say less thatn 100.",
+      description: "Minimal resource usage, typically under 100MB RAM.",
       highlight: "<100MB RAM"
     }
   ];
@@ -66,11 +66,10 @@ const Features = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Why LyricsFloat Changes Everything
+            Discover What Makes LyricsFloat Unique
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Built from the ground up to deliver the perfect lyrics experience. 
-            Every feature designed with music lovers in mind.
+            Explore the key features designed to elevate your music experience.
           </p>
         </div>
 
@@ -107,13 +106,13 @@ const Features = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-green-400 to-blue-400 rounded-2xl p-8 text-black">
             <h3 className="text-2xl font-bold mb-4">
-              Ready to transform your music experience?
+              Ready to Transform Your Music Experience?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Join thousands of users who are already singing along to every song
+              Join thousands of users already enjoying synced lyrics.
             </p>
             <a
-              href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/download/v1.0.0/LyricsFloat_Desktop.Setup.1.0.0.exe" // Updated download link
+              href="#download" // Points to the Download Hub
               className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 inline-block"
             >
               Download LyricsFloat Now

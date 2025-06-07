@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Download, Zap } from 'lucide-react';
+import { Download, Zap } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -26,33 +26,26 @@ const Hero = () => {
               like never before with millisecond-accurate lyrics floating over everything.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col items-center lg:items-start gap-4">
               <a
-                href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/download/v1.0.0/LyricsFloat_Desktop.Setup.1.0.0.exe" // Updated download link
-                className="bg-green-400 hover:bg-green-500 text-black px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center space-x-3 shadow-lg hover:shadow-green-400/25"
+                href="#download" // Changed to link to the download hub
+                className="bg-green-400 hover:bg-green-500 text-black px-10 py-5 rounded-xl font-bold text-xl transition-all transform hover:scale-105 flex items-center justify-center space-x-3 shadow-lg hover:shadow-green-400/25 w-full sm:w-auto"
               >
-                <Download className="h-5 w-5" />
-                <span>Get Started Now</span> {/* Updated text */}
+                <Download className="h-6 w-6" />
+                <span>Download LyricsFloat</span>
               </a>
               
               <a
                 href="#demo"
-                className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all transform hover:scale-105 flex items-center justify-center space-x-3 border border-gray-700"
+                className="text-gray-300 hover:text-green-400 transition-colors text-lg"
               >
-                <Play className="h-5 w-5" />
-                <span>Watch Demo</span>
+                Watch Demo
               </a>
             </div>
             
-            <div className="mt-8 flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-400">
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span>Download & Connect to Spotify</span> {/* Updated text */}
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-                <span>5-minute setup</span>
-              </div>
+            <div className="mt-8 flex items-center justify-center lg:justify-start space-x-4 text-sm text-gray-400">
+              <span>• Quick 5-min setup</span>
+              <span>• Connects to Spotify</span>
             </div>
           </div>
           

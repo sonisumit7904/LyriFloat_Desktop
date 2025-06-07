@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DownloadIcon, Monitor, Zap } from 'lucide-react';
+import { DownloadIcon, Monitor } from 'lucide-react';
 
 const DownloadSection = () => {
   const [notifyEmail, setNotifyEmail] = useState('');
@@ -23,13 +23,6 @@ const DownloadSection = () => {
     { label: "Storage", value: "50MB available space" },
     { label: "Internet", value: "Required for Spotify connection" },
     { label: "Spotify", value: "Premium or Free account" }
-  ];
-
-  const installSteps = [
-    { title: "Download the installer", description: "Single executable file, no additional downloads" },
-    { title: "Run the installer", description: "Quick setup with minimal user input required" },
-    { title: "Connect to Spotify", description: "Secure login with your existing Spotify account" },
-    { title: "Start singing!", description: "Play any song and enjoy synced lyrics" }
   ];
 
   return (
@@ -67,27 +60,6 @@ const DownloadSection = () => {
                 <div key={index} className="flex justify-between items-center py-2 border-b border-gray-700 last:border-b-0">
                   <span className="text-gray-300 font-medium">{req.label}</span>
                   <span className="text-white text-sm">{req.value}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* How Installation Will Work */}
-          <div className="bg-gray-900/50 border border-gray-800 rounded-2xl p-6">
-            <div className="flex items-center space-x-2 mb-6">
-              <Zap className="h-6 w-6 text-green-400" />
-              <h3 className="text-xl font-bold text-white">How Installation Will Work</h3>
-            </div>
-            <div className="space-y-4">
-              {installSteps.map((step, index) => (
-                <div key={index} className="flex items-start space-x-3">
-                  <div className="bg-green-400 text-black rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <div className="text-white font-medium">{step.title}</div>
-                    <div className="text-gray-400 text-sm">{step.description}</div>
-                  </div>
                 </div>
               ))}
             </div>

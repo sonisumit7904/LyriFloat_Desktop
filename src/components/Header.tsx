@@ -42,7 +42,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/download/v1.0.0/LyricsFloat_Desktop.Setup.1.0.0.exe" // Updated download link
+              href="#download" // Changed to link to the download hub
               className="bg-green-400 hover:bg-green-500 text-black px-5 py-2 rounded-lg font-semibold transition-all transform hover:scale-105 text-sm"
             >
               Download Now
@@ -69,7 +69,7 @@ const Header = () => {
             <a href="#support" className="block text-gray-300 hover:text-white transition-colors">Support</a>
             <div className="pt-4 border-t border-gray-800">
               <a
-                href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/download/v1.0.0/LyricsFloat_Desktop.Setup.1.0.0.exe" // Updated download link
+                href="#download" // Changed to link to the download hub
                 className="w-full bg-green-400 hover:bg-green-500 text-black px-5 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 text-sm flex items-center justify-center"
               >
                 Download Now

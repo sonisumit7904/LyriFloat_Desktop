@@ -1,56 +1,56 @@
 import React from 'react';
-import { Download, LogIn, Play, Mic, ArrowRight, CheckCircle } from 'lucide-react';
+import { Download, LogIn, Play, Mic, CheckCircle } from 'lucide-react';
 
 const HowItWorks = () => {
   const steps = [
     {
       number: "01",
       icon: <Download className="h-8 w-8" />,
-      title: "Download",
-      subtitle: "Get the app",
-      description: "Download LyricsFloat from our secure servers. Quick installer, no bloatware.",
-      image: "https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      details: ["One-click installer", "Windows 10+ compatible", "15MB download size"]
+      title: "Download LyricsFloat",
+      subtitle: "One-click installer (15MB)",
+      description: "Get the app from our secure servers. Windows 10+ compatible.",
+      imageAlt: "Illustration of downloading a file",
+      details: ["One-click installer", "Windows 10+ compatible", "Approx. 15MB download size"]
     },
     {
       number: "02", 
       icon: <LogIn className="h-8 w-8" />,
-      title: "Connect",
-      subtitle: "Link your Spotify",
-      description: "Secure OAuth connection to your Spotify account. We only see what's currently playing.",
-      image: "https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      details: ["Secure OAuth login", "Read-only access", "Privacy protected"]
+      title: "Connect to Spotify",
+      subtitle: "Secure OAuth login",
+      description: "Link your Spotify account securely. LyricsFloat only needs to see what's currently playing.",
+      imageAlt: "Illustration of connecting to a service",
+      details: ["Secure OAuth login", "Read-only access to current song", "Your privacy is protected"]
     },
     {
       number: "03",
       icon: <Play className="h-8 w-8" />,
-      title: "Play",
-      subtitle: "Start any song",
-      description: "Play music on Spotify as usual. LyricsFloat automatically detects and syncs lyrics.",
-      image: "https://images.pexels.com/photos/3783471/pexels-photo-3783471.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      details: ["Auto-detection", "Works with any device", "Real-time sync"]
+      title: "Play Your Music",
+      subtitle: "Start any song on Spotify",
+      description: "Play music on Spotify as you normally would. LyricsFloat automatically detects and syncs.",
+      imageAlt: "Illustration of playing music",
+      details: ["Automatic song detection", "Works with any Spotify-connected device", "Real-time lyric synchronization"]
     },
     {
       number: "04",
       icon: <Mic className="h-8 w-8" />,
-      title: "Sing",
-      subtitle: "Enjoy synced lyrics",
-      description: "Watch lyrics appear in perfect sync. Overlay stays on top while you work or play.",
-      image: "https://images.pexels.com/photos/3756766/pexels-photo-3756766.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      details: ["Perfect timing", "Always visible", "Distraction-free"]
+      title: "Enjoy Sing-Along",
+      subtitle: "Synced lyrics appear instantly",
+      description: "Watch perfectly timed lyrics appear. The overlay stays on top while you work or play.",
+      imageAlt: "Illustration of singing with lyrics",
+      details: ["Millisecond-perfect timing", "Always-on-top overlay", "Distraction-free design"]
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
+    <section id="setup" className="py-20 bg-gradient-to-b from-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            From Silent to Singing in 4 Steps
+            Setup in Minutes
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Setup takes less than 5 minutes. Once configured, LyricsFloat works automatically 
-            with every song you play.
+            Get started with LyricsFloat in just a few simple steps. Once configured, it works automatically 
+            with every song you play on Spotify.
           </p>
         </div>
 
@@ -91,24 +91,15 @@ const HowItWorks = () => {
                     </div>
                   ))}
                 </div>
-
-                {index < steps.length - 1 && (
-                  <div className="hidden lg:flex items-center space-x-2 text-gray-400 mt-8">
-                    <span>Next step</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </div>
-                )}
               </div>
 
               {/* Visual */}
               <div className="flex-1">
                 <div className="relative">
                   <div className="bg-gray-800 rounded-2xl p-6 border border-gray-700 shadow-2xl">
-                    <img 
-                      src={step.image}
-                      alt={`Step ${step.number}: ${step.title}`}
-                      className="w-full h-64 object-cover rounded-lg mb-4"
-                    />
+                    <div className="w-full h-64 bg-gray-700 rounded-lg mb-4 flex items-center justify-center">
+                       <span className="text-gray-500 text-sm">{step.imageAlt}</span>
+                    </div>
                     <div className="bg-black/50 rounded-lg p-4">
                       <div className="flex items-center space-x-3 mb-2">
                         <div className="text-green-400">
@@ -136,18 +127,17 @@ const HowItWorks = () => {
         <div className="mt-20 text-center">
           <div className="bg-gray-900/50 rounded-2xl p-8 border border-gray-800">
             <h3 className="text-2xl font-bold text-white mb-4">
-              Total Setup Time: Less Than 5 Minutes
+              Ready to Sing Along?
             </h3>
             <p className="text-gray-300 mb-6">
-              Once set up, LyricsFloat runs automatically in the background. 
-              No manual input required.
+              The entire setup takes less than 5 minutes. Download now and transform your music experience!
             </p>
             <a
-              href="#download"
+              href="#download" // Changed to link to the download hub
               className="bg-gradient-to-r from-green-400 to-blue-400 hover:from-green-500 hover:to-blue-500 text-black px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 inline-flex items-center space-x-3"
             >
               <Download className="h-5 w-5" />
-              <span>Start Your 5-Minute Setup</span>
+              <span>Download LyricsFloat</span>
             </a>
           </div>
         </div>

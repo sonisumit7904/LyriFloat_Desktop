@@ -68,11 +68,11 @@ const LiveDemo = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            See LyricsFloat In Action
+            Experience LyricsFloat: Interactive Demo & Video Tour
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Experience how seamlessly synced lyrics transform your music experience. 
-            This interactive demo shows exactly what you'll see on your screen.
+            This interactive demo shows exactly what you'll see on your screen, followed by a video tour.
           </p>
         </div>
 
@@ -181,22 +181,22 @@ const LiveDemo = () => {
               Download LyricsFloat and start singing along to every song
             </p>
             <a
-              href="#download"
+              href="#download" // Changed to link to the download hub
               className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-all inline-flex items-center space-x-2"
             >
               <span>Get Started Now</span>
             </a>
           </div>
-        </div>
+        </div> {/* This closes max-w-6xl mx-auto for the interactive demo part */}
 
-        {/* YouTube Demo Video */}
+        {/* YouTube Demo Video - Moved here */}
         <div className="mt-20 text-center">
           <div className="mb-8">
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">
-              Watch LyricsFloat in Action
+              Watch a Full Video Tour
             </h3>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              See how LyricsFloat Desktop works in real-time with your favorite Spotify songs.
+              See the complete setup process and all of LyricsFloat's features in action.
             </p>
           </div>
           

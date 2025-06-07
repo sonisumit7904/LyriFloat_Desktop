@@ -6,29 +6,28 @@ const Footer = () => {
 
   const footerLinks = [
     {
-      title: "Project",
+      title: "Navigate",
       links: [
-        { name: "About", href: "#home" },
+        { name: "Home", href: "#home" },
         { name: "Features", href: "#features" },
-        { name: "Development", href: "#support" }
+        { name: "See in Action", href: "#demo" }, // Assuming a demo section with id "demo"
+        { name: "Download", href: "#download" }  // Assuming a download hub with id "download"
       ]
     },
     {
-      title: "Development", 
+      title: "Key Links",
       links: [
-        { name: "GitHub Repository", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" },
-        { name: "Follow Progress", href: "https://x.com/sonisumit7904" },
-        { name: "Contact Developer", href: "mailto:sonisumit7904@gmail.com" },
-        { name: "Feature Requests", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/issues" }
+        { name: "GitHub Project", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" },
+        { name: "Feature Requests / Issues", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/issues" },
+        { name: "Contact Us", href: "mailto:sonisumit7904@gmail.com" }
       ]
     },
     {
-      title: "Community",
+      title: "Community & Support",
       links: [
-        { name: "Twitter Updates", href: "https://x.com/sonisumit7904" },
-        { name: "GitHub Stars", href: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" },
+        { name: "Twitter / Updates", href: "https://x.com/sonisumit7904" },
         { name: "Support Development", href: "https://bento.me/sumit-soni" },
-        { name: "Share Project", href: "https://lyricsfloat.vercel.app/" }
+        { name: "Share LyricsFloat", href: "https://lyricsfloat.vercel.app/" } // Link to the main page for sharing
       ]
     }
   ];
