@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Star, Coffee, Twitter, Github, MessageCircle, Users, Share2 } from 'lucide-react';
+import { Star, Coffee, Twitter, Share2 } from 'lucide-react';
 
 const Community = () => {
   const socialActions = [
@@ -7,8 +7,8 @@ const Community = () => {
       icon: <Twitter className="h-6 w-6" />,
       title: "Motivate the Developer",
       description: "Follow us on Twitter for updates and behind-the-scenes content",
-      action: "Follow @LyricsFloat",
-      link: "https://twitter.com/LyricsFloat",
+      action: "Follow @sonisumit7904", // Updated Twitter handle
+      link: "https://x.com/sonisumit7904", // Updated Twitter link
       color: "from-blue-400 to-blue-500",
       hoverColor: "hover:from-blue-500 hover:to-blue-600"
     },
@@ -26,7 +26,7 @@ const Community = () => {
       title: "Star on GitHub",
       description: "Show your support by starring our repository",
       action: "⭐ Star Repository",
-      link: "https://github.com/[username]/LyricsFloat-Desktop",
+      link: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases", // Updated GitHub link
       color: "from-gray-400 to-gray-500",
       hoverColor: "hover:from-gray-500 hover:to-gray-600"
     },
@@ -41,13 +41,6 @@ const Community = () => {
     }
   ];
 
-  const communityStats = [
-    { number: "12.8K", label: "Downloads", icon: <Users className="h-5 w-5" /> },
-    { number: "4.8", label: "Rating", icon: <Star className="h-5 w-5" /> },
-    { number: "245", label: "GitHub Stars", icon: <Github className="h-5 w-5" /> },
-    { number: "1.2K", label: "Discord Members", icon: <MessageCircle className="h-5 w-5" /> }
-  ];
-
   return (
     <section className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,23 +52,6 @@ const Community = () => {
             LyricsFloat is built with passion by a small team. Your support helps us 
             continue developing features that make music more enjoyable for everyone.
           </p>
-        </div>
-
-        {/* Community Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {communityStats.map((stat, index) => (
-            <div key={index} className="text-center bg-gray-900/50 rounded-xl p-6 border border-gray-800">
-              <div className="text-green-400 mb-2 flex justify-center">
-                {stat.icon}
-              </div>
-              <div className="text-2xl lg:text-3xl font-bold text-white mb-1">
-                {stat.number}
-              </div>
-              <div className="text-gray-400 text-sm">
-                {stat.label}
-              </div>
-            </div>
-          ))}
         </div>
 
         {/* Social Actions Grid */}
@@ -147,39 +123,6 @@ const Community = () => {
                   <span>Buy Me a Coffee</span>
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Community Guidelines */}
-        <div className="mt-16 text-center">
-          <div className="bg-gray-900/50 rounded-2xl p-8 border border-gray-800">
-            <h3 className="text-xl font-bold text-white mb-4">
-              Join Our Growing Community
-            </h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Whether you want to share feedback, request features, help others, or just chat about music, 
-              our community is welcoming to all music lovers.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://discord.gg/lyricsFloat"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center space-x-2"
-              >
-                <MessageCircle className="h-5 w-5" />
-                <span>Join Discord Community</span>
-              </a>
-              <a
-                href="https://github.com/[username]/LyricsFloat-Desktop/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center space-x-2"
-              >
-                <Github className="h-5 w-5" />
-                <span>Report Issues</span>
-              </a>
             </div>
           </div>
         </div>

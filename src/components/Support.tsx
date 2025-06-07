@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { HelpCircle, Github, Mail, ChevronDown, ChevronUp, Search, ExternalLink, MessageCircle } from 'lucide-react';
 
 const Support = () => {
@@ -58,14 +58,14 @@ const Support = () => {
       icon: <Github className="h-6 w-6" />,
       title: "Follow Development",
       description: "Watch our progress and star the repository for updates",
-      link: "https://github.com/[username]/LyricsFloat-Desktop",
+      link: "https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases", // Updated GitHub link
       action: "Star on GitHub"
     },
     {
       icon: <MessageCircle className="h-6 w-6" />,
       title: "Development Updates", 
       description: "Follow our journey and get notified about milestones",
-      link: "https://twitter.com/LyricsFloat",
+      link: "https://x.com/sonisumit7904", // Updated Twitter link
       action: "Follow on Twitter"
     },
     {
@@ -187,7 +187,7 @@ const Support = () => {
                 <a href="#how-it-works" className="block text-green-400 hover:text-green-300 transition-colors">
                   → How It Will Work
                 </a>
-                <a href="https://github.com/[username]/LyricsFloat-Desktop" target="_blank" rel="noopener noreferrer" className="block text-green-400 hover:text-green-300 transition-colors">
+                <a href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" target="_blank" rel="noopener noreferrer" className="block text-green-400 hover:text-green-300 transition-colors">
                   → View Source Code
                 </a>
               </div>
@@ -199,15 +199,15 @@ const Support = () => {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-300">Core Features</span>
-                  <span className="text-white">90% Complete</span>
+                  <span className="text-white">100% Complete</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-300">Testing Phase</span>
-                  <span className="text-white">In Progress</span>
+                  <span className="text-white">Completed</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-gray-300">Expected Launch</span>
-                  <span className="text-white">Coming Soon</span>
+                  <span className="text-gray-300">Current Version</span>
+                  <span className="text-white">v1.0.0</span>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Music, Heart, Github, Twitter, Mail, MessageCircle } from 'lucide-react';
+import { Music, Heart, Github, Twitter, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -144,15 +144,13 @@ const Footer = () => {
             
             <div className="flex items-center space-x-6 text-sm text-gray-400">
               <a 
-                href="https://github.com/[username]/LyricsFloat-Desktop" 
+                href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
               >
                 Open Source
               </a>
-              <span>•</span>
-              <span>Coming Soon</span>
             </div>
           </div>
         </div>

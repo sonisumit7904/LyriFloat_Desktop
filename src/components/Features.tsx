@@ -7,7 +7,7 @@ const Features = () => {
       icon: <Zap className="h-8 w-8" />,
       title: "Real-Time Sync",
       subtitle: "Perfect timing, every time",
-      description: "Never miss a beat with millisecond-accurate lyrics that sync perfectly with your music.",
+      description: "it depends on our server, but almost all are correct.",
       highlight: "99.9% accuracy"
     },
     {
@@ -42,7 +42,7 @@ const Features = () => {
       icon: <Globe className="h-8 w-8" />,
       title: "Multi-Language",
       subtitle: "Global music support",
-      description: "Support for lyrics in dozens of languages, from K-pop to Latin, and everything in between.",
+      description: "it also depends on our server, currently, the lyrics language is not changable, as we fetch it from the server, it depends on server, will improve it on user demand.",
       highlight: "25+ languages"
     },
     {
@@ -56,8 +56,8 @@ const Features = () => {
       icon: <Cpu className="h-8 w-8" />,
       title: "Lightweight",
       subtitle: "Minimal resource usage",
-      description: "Uses less than 50MB RAM and barely any CPU. You won't even notice it's running.",
-      highlight: "<50MB RAM"
+      description: "currently uses around 80mb of ram, but will reduce it also, can say less thatn 100.",
+      highlight: "<100MB RAM"
     }
   ];
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Users, Download, Heart, Star, Globe, Rocket, Code, Coffee } from 'lucide-react';
+import { Heart, Rocket, Code, Coffee } from 'lucide-react';
 
 const SocialProof = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,9 +11,9 @@ const SocialProof = () => {
   const highlights = [
     {
       icon: <Rocket className="h-8 w-8" />,
-      title: "Coming Soon",
-      subtitle: "Almost ready to launch",
-      description: "Final testing and polishing in progress",
+      title: "LyricsFloat is ready!",
+      subtitle: "Download the first release now",
+      description: "Follow our development journey and be the first to know when LyricsFloat is ready",
       color: "text-green-400"
     },
     {
@@ -40,12 +40,7 @@ const SocialProof = () => {
   ];
 
   const upcomingFeatures = [
-    "Real-time lyrics synchronization",
-    "Multiple lyrics source integration",
-    "Customizable overlay appearance",
-    "Lightweight system footprint",
-    "Privacy-focused design",
-    "Cross-platform compatibility (planned)"
+    // Removed features that were part of "What's Coming"
   ];
 
   return (
@@ -56,7 +51,7 @@ const SocialProof = () => {
             Be Among the First
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            LyricsFloat Desktop is in final development. Join our early community 
+            LyricsFloat Desktop is now released! Join our community
             and help us create the perfect lyrics experience.
           </p>
         </div>
@@ -87,52 +82,18 @@ const SocialProof = () => {
           ))}
         </div>
 
-        {/* Development Progress */}
-        <div className="bg-gray-900/30 rounded-2xl p-8 border border-gray-800 mb-12">
-          <h3 className="text-2xl font-bold text-center mb-8 flex items-center justify-center space-x-2">
-            <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse" />
-            <span>Development in Progress</span>
-          </h3>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h4 className="text-lg font-semibold text-white mb-4">What's Ready</h4>
-              <div className="space-y-3">
-                {upcomingFeatures.slice(0, 3).map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-400 rounded-full" />
-                    <span className="text-gray-300">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="text-lg font-semibold text-white mb-4">Coming Next</h4>
-              <div className="space-y-3">
-                {upcomingFeatures.slice(3).map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-                    <span className="text-gray-300">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Early Access CTA */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-green-400 to-blue-400 rounded-2xl p-8 text-black">
             <h3 className="text-2xl font-bold mb-4">
-              Want to be notified when we launch?
+              LyricsFloat is ready!
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Follow our development journey and be the first to know when LyricsFloat is ready
+              Follow our development journey and be the first to know about new updates for LyricsFloat.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://twitter.com/LyricsFloat"
+                href="https://x.com/sonisumit7904"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center space-x-2"
@@ -140,7 +101,7 @@ const SocialProof = () => {
                 <span>Follow Development Updates</span>
               </a>
               <a
-                href="https://github.com/[username]/LyricsFloat-Desktop"
+                href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-black/20 hover:bg-black/30 text-black px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center space-x-2 border-2 border-black/20"

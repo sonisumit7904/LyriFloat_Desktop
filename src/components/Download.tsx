@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Download, Github, Monitor, Shield, Clock, ExternalLink, CheckCircle, AlertCircle, Star } from 'lucide-react';
+import { Monitor } from 'lucide-react';
 
 const DownloadSection = () => {
   const [notifyEmail, setNotifyEmail] = useState('');
@@ -39,103 +39,69 @@ const DownloadSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Almost Ready to Launch
+            Download LyricsFloat v1.0.0
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            LyricsFloat Desktop is in final development. Be the first to know when 
-            it's ready and get early access to the download.
+            LyricsFloat Desktop is now available! Download the first release and enjoy real-time synced lyrics.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Notify Me Section */}
-          <div className="space-y-8">
-            {/* Primary Notification Signup */}
+          {/* Notify Me Section - Removed */}
+          {/* <div className="space-y-8">
             <div className="bg-gradient-to-br from-green-400/10 to-blue-400/10 border border-green-400/30 rounded-2xl p-8">
               <div className="text-center mb-6">
                 <div className="inline-flex items-center bg-green-400 text-black px-4 py-2 rounded-full font-semibold mb-4">
                   <Clock className="h-4 w-4 mr-2" />
-                  Coming Soon
+                  Now Available!
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  Get Notified When We Launch
+                  Download LyricsFloat
                 </h3>
                 <p className="text-gray-300">
-                  Be among the first to experience real-time synced lyrics
+                  Experience real-time synced lyrics with our first release.
                 </p>
               </div>
-
-              <form onSubmit={handleNotifySubmit} className="mb-6">
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <input
-                    type="email"
-                    value={notifyEmail}
-                    onChange={(e) => setNotifyEmail(e.target.value)}
-                    placeholder="Enter your email for launch notification"
-                    className="flex-1 bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-green-400 focus:outline-none transition-colors"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    disabled={isSubscribed}
-                    className={`bg-green-400 hover:bg-green-500 text-black font-bold py-3 px-6 rounded-lg transition-all ${
-                      isSubscribed ? 'opacity-75 cursor-not-allowed' : 'transform hover:scale-105'
-                    }`}
-                  >
-                    {isSubscribed ? 'Subscribed!' : 'Notify Me'}
-                  </button>
-                </div>
-              </form>
-
               <div className="text-center">
-                <p className="text-sm text-gray-400 mb-4">
-                  We'll only email you when LyricsFloat is ready to download
-                </p>
-                <div className="flex items-center justify-center space-x-6 text-sm text-gray-400">
-                  <div className="flex items-center space-x-1">
-                    <Shield className="h-4 w-4 text-green-400" />
-                    <span>No spam</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <Clock className="h-4 w-4 text-green-400" />
-                    <span>Launch soon</span>
-                  </div>
-                </div>
+                 <a
+                  href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases/releases/tag/v1.0.0" // Direct download link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-400 hover:bg-green-500 text-black font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 inline-flex items-center justify-center space-x-2"
+                >
+                  <Download className="h-5 w-5" />
+                  <span>Download v1.0.0</span>
+                </a>
               </div>
             </div>
-
-            {/* Alternative Ways to Stay Updated */}
             <div className="bg-gray-900/50 border border-gray-800 rounded-2xl p-6">
               <h4 className="text-lg font-semibold text-white mb-4">
-                Other Ways to Stay Updated
+                Stay Updated
               </h4>
               <div className="space-y-3">
                 <a
-                  href="https://twitter.com/LyricsFloat"
+                  href="https://x.com/sonisumit7904" // Updated Twitter link
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-4 bg-black/50 rounded-lg hover:bg-black/70 transition-colors border border-gray-700"
                 >
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-                      <span className="text-white font-bold">T</span>
-                    </div>
+                    <svg className="h-6 w-6 text-blue-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
                     <div>
-                      <div className="text-white font-medium">Follow on Twitter</div>
-                      <div className="text-gray-400 text-sm">Get development updates and launch news</div>
+                      <div className="text-white font-medium">Follow on X (Twitter)</div>
+                      <div className="text-gray-400 text-sm">Get the latest news and updates</div>
                     </div>
                   </div>
                   <ExternalLink className="h-4 w-4 text-gray-400" />
                 </a>
-                
                 <a
-                  href="https://github.com/[username]/LyricsFloat-Desktop"
+                  href="https://github.com/sonisumit7904/LyricsFloat_Desktop_Releases" // Updated GitHub link
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-4 bg-black/50 rounded-lg hover:bg-black/70 transition-colors border border-gray-700"
                 >
                   <div className="flex items-center space-x-3">
-                    <Github className="h-10 w-10 text-gray-400" />
+                    <Github className="h-6 w-6 text-gray-300" />
                     <div>
                       <div className="text-white font-medium">Star on GitHub</div>
                       <div className="text-gray-400 text-sm">Watch the repository for release notifications</div>
@@ -148,24 +114,9 @@ const DownloadSection = () => {
                 </a>
               </div>
             </div>
+          </div> */}
 
-            {/* What's Included */}
-            <div className="bg-gray-900/50 border border-gray-800 rounded-2xl p-6">
-              <h4 className="text-lg font-semibold text-white mb-4">
-                What's Coming
-              </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {plannedFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
-                    <span className="text-gray-300 text-sm">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* System Requirements & Info */}
+          {/* Right Column: Download Info, Install Steps, System Req */}
           <div className="space-y-8">
             {/* System Requirements */}
             <div className="bg-gray-900/50 border border-gray-800 rounded-2xl p-6">
@@ -228,33 +179,18 @@ const DownloadSection = () => {
               </div>
             </div>
 
-            {/* Development Status */}
-            <div className="bg-blue-400/10 border border-blue-400/30 rounded-2xl p-6">
+            {/* Development Status - This section is removed */}
+            {/* <div className="bg-blue-400/10 border border-blue-400/30 rounded-2xl p-6">
               <div className="flex items-start space-x-3">
                 <AlertCircle className="h-6 w-6 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-blue-400 font-semibold mb-2">Development Status</h4>
                   <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                    LyricsFloat Desktop is currently in final development and testing phases. 
-                    We're working hard to ensure a stable, polished experience before launch.
+                    LyricsFloat Desktop v1.0.0 is now released!
                   </p>
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-300">Core Features</span>
-                      <span className="text-green-400">90% Complete</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-300">Testing & Polish</span>
-                      <span className="text-yellow-400">In Progress</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-300">Expected Launch</span>
-                      <span className="text-blue-400">Coming Soon</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
