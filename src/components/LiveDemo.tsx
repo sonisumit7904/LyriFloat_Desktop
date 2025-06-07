@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Play, Pause, Music, Volume2, SkipForward } from 'lucide-react';
+import { Play, Pause, Music, Volume2, SkipForward, Youtube } from 'lucide-react';
 
 const LiveDemo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -188,6 +188,43 @@ const LiveDemo = () => {
             >
               <span>Get Started Now</span>
             </a>
+          </div>
+        </div>
+
+        {/* YouTube Demo Video */}
+        <div className="mt-20 text-center">
+          <div className="mb-8">
+            <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+              Watch LyricsFloat in Action
+            </h3>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              See how LyricsFloat Desktop works in real-time with your favorite Spotify songs.
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800">
+              <div className="flex items-center justify-center space-x-2 mb-4">
+                <Youtube className="h-6 w-6 text-red-500" />
+                <span className="text-white font-semibold">Official Demo Video</span>
+              </div>
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe 
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  src="https://www.youtube.com/embed/ZW96X5_q7wI?si=1Uw3__HJSaecV8SW" 
+                  title="LyricsFloat Desktop Demo - Real-time Synced Lyrics for Spotify" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                />
+              </div>
+              <div className="mt-4 text-center">
+                <p className="text-gray-400 text-sm">
+                  Watch the complete setup process and see LyricsFloat's features in action
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
